@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "PSY360: Research Methods"
+  author: "David Brocker"
+  date: "`r format(Sys.time(), '%d %B, %Y')"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: "Chapters"
+      chapters:
+      - words.qmd
+      - chapter1.qmd
+      - chapter2.qmd
+      - summary.qmd
+      - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: 
+      dark: darkly
+      light: flatly
+  pdf:
+    documentclass: scrreprt
+
+editor: visual

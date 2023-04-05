@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PSY360: Research Methods",
+    "section": "",
+    "text": "Preface\nWelcome to PSY360: Research Methods! The goal of this course is to introduce you to the world of research and discuss how research is conducted, why research is conducted, and what it means to conduct research.\n\nChapter 1: Introduction to Research Methods and Statistics\n\n\nChapter 2: Variables, Measurement, and Scales of Measurement\n\n\nChapter 3: Probability and Probability Distributions\n\n\nChapter 4: Sampling and Sampling Distributions\n\n\nChapter 5: Hypothesis Testing and Estimation\n\n\nChapter 6: One-Sample t-tests and Confidence Intervals\n\n\nChapter 7: Independent Samples t-tests and Confidence Intervals\n\n\nChapter 8: One-Way ANOVA\n\n\nChapter 9: Two-Way ANOVA\n\n\nChapter 10: Correlation and Regression\n\n\nChapter 11: Logistic Regression and Multiple Regression\n\n\nChapter 12: Non-Parametric Tests\n\n\nChapter 13: Factor Analysis and Structural Equation Modeling\n\n\nChapter 14: Meta-Analysis\n\n\nChapter 15: Advanced Topics in Research Methods and Statistics"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "5  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "words.html",
+    "href": "words.html",
+    "title": "2  Let’s Take a Sentence",
+    "section": "",
+    "text": "library(stringr)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(janeaustenr)\nlibrary(ggplot2)\nlibrary(wesanderson)\nlibrary(tidyr)\n\nsent <- sample(sentences,1)\n\nsent\n\n[1] \"Mud was spattered on the front of his white shirt.\"\n\n\n\n2.0.1 How many characters?\n\nstr_length(sent)\n\n[1] 50\n\n\n\n\n2.0.2 How many words?\n\nlength(unlist(str_match_all(sent, \"\\\\b\\\\w+\\\\b\")))\n\n[1] 10\n\n\n\n\n2.0.3 How many words start with a vowel?\n\nsent_split <- unlist(str_split(sent, boundary(type = \"word\")))\n\nstr_extract(sent_split, \"^[aeiou]\\\\w+\" )\n\n [1] NA   NA   NA   \"on\" NA   NA   \"of\" NA   NA   NA  \n\n\n\n\n2.0.4 How many words start with a consonant?\n\nsent_split <- unlist(str_split(sent, boundary(type = \"word\")))\n# We only need to change one character!\nstr_extract(sent_split, \"[^aeiou]\\\\w+\" )\n\n [1] \"Mud\"       \"was\"       \"spattered\" NA          \"the\"       \"front\"    \n [7] NA          \"his\"       \"white\"     \"shirt\"    \n\n\n\n# Messing around\nbook_name <- \n  austen_books() |> \n  select(book) |> \n  unique() |> \n  pull()\n\n# Assign page length\nbk <- \n  tibble(\n    book = book_name,\n    page = runif(length(book),250,400) |> round(0),\n    title = page/2\n    ) \nbk |> \n  ggplot(aes(book,page, fill = book, label = book)) + \n  geom_bar(stat = \"identity\",\n           show.legend = FALSE) +\n  theme_void() +\n  geom_text(angle = 90,\n            aes(y = title)) +\n  scale_fill_manual(values = wes_palette(8, \n                                         name = \"Zissou1\", \n                                         type = \"continuous\"))\n\n\n\n\n\n# Basic\nbk |> \n  ggplot(aes(x = book,y = page)) + \n  geom_point(size = 8) +  \n  geom_segment(aes(x = book, xend = book, y = 0, yend = page)) +\n  coord_flip() +\n  labs(y = \"\\nPage Length\") \n\n\n\n\n\n# Weird Thing\n\ndat <- \n  data.frame(\n  season = rep(1:4,each = 10),\n  episode = rep(1:10, 4),\n  rating = runif(40,6.5,9.2) |> round(2)\n) |> \n  arrange(season, episode) |> \n  mutate(episode_id = row_number()) |> \n  group_by(season) |> \n  mutate(\n    avg = mean(rating),\n    episode_mod = episode_id + (4 * season),\n    mid = mean(episode_mod)\n  ) |> \n  ungroup() |> \n  mutate(season = factor(season))\n\ndat_lines <-\n  dat %>% \n  group_by(season) %>% \n  summarize(\n    start_x = min(episode_mod) - 5,\n    end_x = max(episode_mod) + 5,\n    y = unique(avg)\n  ) %>% \n  pivot_longer(\n    cols = c(start_x, end_x),\n    names_to = \"type\",\n    values_to = \"x\"\n  ) %>% \n  mutate(\n    x_group = if_else(type == \"start_x\", x + .1, x - .1),\n    x_group = if_else(type == \"start_x\" & x == min(x), x_group - .1, x_group),\n    x_group = if_else(type == \"end_x\" & x == max(x), x_group + .1, x_group)\n  )\n\ntheme_set(theme_minimal())\ntheme_update(\n  plot.background = element_rect(fill = \"#fafaf5\", color = \"#fafaf5\"),\n  panel.background = element_rect(fill = NA, color = NA),\n  panel.border = element_rect(fill = NA, color = NA),\n  panel.grid.major.x = element_blank(),\n  panel.grid.minor = element_blank(),\n  axis.text.x = element_blank(),\n  axis.text.y = element_text(size = 10),\n  axis.ticks = element_blank(),\n  axis.title.y = element_text(size = 13, margin = margin(r = 10)),\n  legend.title = element_text(size = 9),\n    plot.caption = element_text(\n    family = \"Special Elite\",\n    size = 10,\n    color = \"grey70\",\n    face = \"bold\",\n    hjust = .5,\n    margin = margin(5, 0, 20, 0)\n  ),\n  plot.margin = margin(10, 25, 10, 25)\n)\n\np <- \n  dat %>% \n  ggplot(aes(episode_mod, rating)) +\n    geom_hline(\n      data = tibble(y = 7:10),\n      aes(yintercept = y),\n      color = \"grey82\",\n      size = .5\n    )\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\np <- \n  p +\n  geom_segment(\n    aes(\n      xend = episode_mod,\n      yend = avg, \n      color = season\n    )\n  )\n\np <- \n  p + \n  geom_segment(\n    aes(\n      xend = episode_mod,\n      yend = avg, \n      color = season, \n      color = after_scale(colorspace::lighten(color,.2))\n    )\n  )\n\nWarning: Duplicated aesthetics after name standardisation: colour\n\np <- \n  p +\n  geom_line(\n    data = dat_lines,\n    aes(\n      x_group,\n      y,\n      color = season\n    ),\n    size = 2.5\n  ) + \n  geom_point(aes(size = 2, \n                 color = season))\n\np + \n  labs(x = \"\", \n       y = \"\") +\n  geom_label(\n    aes(\n      mid,\n      10.12,\n      label = glue::glue(\" Season {season} \"),\n      color = season\n    ),\n    fill = NA,\n    fontface = \"bold\",\n    label.padding = unit(.2,\"lines\"),\n    label.r = unit(.25,\"lines\")\n  ) +\n  scale_x_continuous(expand = c(.015,.015)) +\n  scale_y_continuous(\n    expand = c(.03,.03),\n    limits = c(6.5,10.2),\n    breaks = seq(6.5,10, by = .5),\n    sec.axis = dup_axis(name = NULL)\n  ) +\n    scale_color_manual(\n      values = c(\"#486090\", \"#D7BFA6\", \"#6078A8\", \"#9CCCCC\", \"#7890A8\", \n                 \"#C7B0C1\", \"#B5C9C9\", \"#90A8C0\", \"#A8A890\"),\n      guide = FALSE # don't show guide for the color scale.\n    ) +\n    scale_size_binned(name = \"Votes per Episode\", range = c(.3, 3)) +\n  guides(\n      size = guide_bins(\n        show.limits = TRUE,\n        direction = \"horizontal\",\n        title.position = \"top\",\n        title.hjust = .5\n      )\n    ) \n\nWarning: The `guide` argument in `scale_*()` cannot be `FALSE`. This was deprecated in\nggplot2 3.3.4.\nℹ Please use \"none\" instead."
+  },
+  {
+    "objectID": "chapter1.html",
+    "href": "chapter1.html",
+    "title": "3  Chapter 1: Reading and Writing an APA Style Paper",
+    "section": "",
+    "text": "R Course Learning Outcomes:\nUpon completion of this course, students should be able to:\n\nInstall and set up R and RStudio, and be familiar with R syntax and basic data types.\nImport and export data in various formats, and clean and wrangle data as needed.\nCalculate descriptive statistics, create data visualizations, and generate summary statistics using R.\nConduct hypothesis tests and interpret statistical output for t-tests, ANOVA, correlation, and regression analyses.\nApply advanced statistical techniques such as factor analysis, reliability and validity analysis, and Bayesian statistics.\nAnalyze psychological data using R and communicate statistical results effectively in research reports and presentations.\nDevelop skills in problem-solving, critical thinking, and data analysis that are transferable to other fields."
+  }
+]

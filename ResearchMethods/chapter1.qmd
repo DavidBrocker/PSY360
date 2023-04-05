@@ -1,0 +1,19 @@
+## Chapter 1: Reading and Writing an APA Style Paper
+
+R Course Learning Outcomes:
+
+Upon completion of this course, students should be able to:
+
+1.  Install and set up R and RStudio, and be familiar with R syntax and basic data types.
+
+2.  Import and export data in various formats, and clean and wrangle data as needed.
+
+3.  Calculate descriptive statistics, create data visualizations, and generate summary statistics using R.
+
+4.  Conduct hypothesis tests and interpret statistical output for t-tests, ANOVA, correlation, and regression analyses.
+
+5.  Apply advanced statistical techniques such as factor analysis, reliability and validity analysis, and Bayesian statistics.
+
+6.  Analyze psychological data using R and communicate statistical results effectively in research reports and presentations.
+
+7.  Develop skills in problem-solving, critical thinking, and data analysis that are transferable to other fields.

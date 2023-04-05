@@ -1,0 +1,33 @@
+# Preface {.unnumbered}
+
+Welcome to PSY360: Research Methods! The goal of this course is to introduce you to the world of research and discuss *how* research is conducted, *why* research is conducted, and *what* it means to conduct research.
+
+### Chapter 1: Introduction to Research Methods and Statistics
+
+### Chapter 2: Variables, Measurement, and Scales of Measurement
+
+### Chapter 3: Probability and Probability Distributions
+
+### Chapter 4: Sampling and Sampling Distributions
+
+### Chapter 5: Hypothesis Testing and Estimation
+
+### Chapter 6: One-Sample t-tests and Confidence Intervals
+
+### Chapter 7: Independent Samples t-tests and Confidence Intervals
+
+### Chapter 8: One-Way ANOVA
+
+### Chapter 9: Two-Way ANOVA
+
+### Chapter 10: Correlation and Regression
+
+### Chapter 11: Logistic Regression and Multiple Regression
+
+### Chapter 12: Non-Parametric Tests
+
+### Chapter 13: Factor Analysis and Structural Equation Modeling
+
+### Chapter 14: Meta-Analysis
+
+### Chapter 15: Advanced Topics in Research Methods and Statistics
