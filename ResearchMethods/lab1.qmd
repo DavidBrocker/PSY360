@@ -44,9 +44,26 @@ df_test <-
     sample(babynames$name,30), " ", sample(LETTERS,30,replace = T), "."
 ))
 
-df_test |> 
-  arrange(student) |> 
-  hux()
+num_gr <- 5
+
+colname <- paste0("Group ", 1:5)
+
+df_abc <- 
+  df_test |> 
+  group_by((row_number()-1) %/% (n()/num_gr)) |> 
+  tidyr::nest()
+
+df_abc_d <- 
+  df_abc$data |> 
+  as.data.frame() |> 
+  hux() |> 
+  theme_article()
+
+df_abc_d[1,1:5] <- colname
+
+df_abc_d |> 
+  set_left_border() |> 
+  set_caption("Study Groups")
 
 ```
 
@@ -78,8 +95,8 @@ df_t |>
 
 ```{r}
 df_test |> 
-  mutate(lettergrp = sample(LETTERS[1:5],length(student),replace = T)) |> 
-  arrange(lettergrp)
+  mutate(lettergrp = sample(LETTERS[1:5],length(student),replace = T),
+         lettergrp = factor(lettergrp))
 
   
 ```
