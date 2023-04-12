@@ -1,6 +1,5 @@
 ---
 format: html
-server: shiny
 ---
 
 ## Chapter 2: Working with Descriptive Statistics
@@ -18,11 +17,6 @@ $\overline{X}=\frac{\Sigma x}{n}$
 In a simple group, the mean can be seen by *eyeballing* the data:
 
 ```{r}
-library(huxtable)
-library(dplyr)
-library(ggplot2)
-library(shiny)
-
 x <- rnorm(5,1,0)
 x
 ```
@@ -53,23 +47,3 @@ $\sigma = \frac{\Sigma (x- \overline{x} }{n-1}$
 :::
 
 #### Test
-
-```{r}
-#| context: server
-library(shiny)
-
-ui <- fluidPage(
-  textInput("numba","Enter N",value = ""),
-  plotOutput("plotme")
-)
-
-server <- function(input, output, session) {
-  output$plotme <- renderPlot({
-    x <- rnorm(input$numba
-               ,100,15)
-    plot(x)
-  })
-}
-
-shinyApp(ui, server)
-```
