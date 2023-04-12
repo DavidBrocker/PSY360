@@ -4,8 +4,8 @@ project:
 
 book:
   title: "PSY360: Research Methods"
-  author: "David Brocker & Kathryn Hauschild, Ph.D"
-  date: "`r format(Sys.time(), '%d %B, %Y')"
+  author: "David Brocker"
+  date: "`r format(Sys.time(),'%d %B, %Y)'"
   chapters:
     - index.qmd
     - intro.qmd

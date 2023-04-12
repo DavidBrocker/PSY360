@@ -354,7 +354,7 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>sent</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Each penny shone like new."</code></pre>
+<pre><code>[1] "The horse trotted around the field at a brisk pace."</code></pre>
 </div>
 </div>
 <section id="how-many-characters" class="level3" data-number="4.0.1">
@@ -362,7 +362,7 @@ Attaching package: 'dplyr'</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str_length</span>(sent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 26</code></pre>
+<pre><code>[1] 51</code></pre>
 </div>
 </div>
 </section>
@@ -371,7 +371,7 @@ Attaching package: 'dplyr'</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unlist</span>(<span class="fu">str_match_all</span>(sent, <span class="st">"</span><span class="sc">\\</span><span class="st">b</span><span class="sc">\\</span><span class="st">w+</span><span class="sc">\\</span><span class="st">b"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
+<pre><code>[1] 10</code></pre>
 </div>
 </div>
 </section>
@@ -382,7 +382,8 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_extract</span>(sent_split, <span class="st">"^[aeiou]</span><span class="sc">\\</span><span class="st">w+"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] NA NA NA NA NA</code></pre>
+<pre><code> [1] NA       NA       NA       "around" NA       NA       "at"     NA      
+ [9] NA       NA      </code></pre>
 </div>
 </div>
 </section>
@@ -393,7 +394,8 @@ Attaching package: 'dplyr'</code></pre>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># We only need to change one character!</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str_extract</span>(sent_split, <span class="st">"[^aeiou]</span><span class="sc">\\</span><span class="st">w+"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Each"  "penny" "shone" "like"  "new"  </code></pre>
+<pre><code> [1] "The"     "horse"   "trotted" "round"   "the"     "field"   NA       
+ [8] NA        "brisk"   "pace"   </code></pre>
 </div>
 </div>
 

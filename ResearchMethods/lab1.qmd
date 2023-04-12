@@ -14,7 +14,7 @@ library(dplyr,warn.conflicts = F)
 library(huxtable)
 ```
 
-### For My First Trick...
+### Group Assignment
 
 You will be working in a group this semester. You will develop a project, gather measures, find background literature, collect data, analyze results, all culminating in a final paper.
 
@@ -32,7 +32,7 @@ meth1 <-
               rnorm(5,2.5,.5))
 ) 
 
-cluster::agnes(meth1, metric = "euclidean", method = "average")
+#cluster::agnes(meth1, metric = "euclidean", method = "average")
 ```
 
 2.  What if we sorted groups alphabetically?
@@ -96,7 +96,9 @@ df_t |>
 ```{r}
 df_test |> 
   mutate(lettergrp = sample(LETTERS[1:5],length(student),replace = T),
-         lettergrp = factor(lettergrp))
+         lettergrp = factor(lettergrp)) |> 
+  hux() |> 
+  theme_article()
 
   
 ```
