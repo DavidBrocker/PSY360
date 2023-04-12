@@ -1,19 +1,17 @@
 ## Chapter 1: Reading and Writing an APA Style Paper
 
-R Course Learning Outcomes:
+Reading an APA paper can seem like a daunting task at first glance. Some articles can be dozens of pages and the results section can make the statistically-weak-stomached run and hide!
 
-Upon completion of this course, students should be able to:
+The key to reading an APA paper is to break it down into its sections
 
-1.  Install and set up R and RStudio, and be familiar with R syntax and basic data types.
+#### Abstract
 
-2.  Import and export data in various formats, and clean and wrangle data as needed.
+#### Introduction/Background
 
-3.  Calculate descriptive statistics, create data visualizations, and generate summary statistics using R.
+#### Method
 
-4.  Conduct hypothesis tests and interpret statistical output for t-tests, ANOVA, correlation, and regression analyses.
+#### Results
 
-5.  Apply advanced statistical techniques such as factor analysis, reliability and validity analysis, and Bayesian statistics.
+#### Discussion
 
-6.  Analyze psychological data using R and communicate statistical results effectively in research reports and presentations.
-
-7.  Develop skills in problem-solving, critical thinking, and data analysis that are transferable to other fields.
+#### References

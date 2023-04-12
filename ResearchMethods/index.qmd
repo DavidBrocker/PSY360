@@ -2,32 +2,66 @@
 
 Welcome to PSY360: Research Methods! The goal of this course is to introduce you to the world of research and discuss *how* research is conducted, *why* research is conducted, and *what* it means to conduct research.
 
-### Chapter 1: Introduction to Research Methods and Statistics
+## Lecture
 
-### Chapter 2: Variables, Measurement, and Scales of Measurement
+Chapter 1: Introduction to Research Methods and Statistics
 
-### Chapter 3: Probability and Probability Distributions
+Chapter 2: Variables, Measurement, and Scales of Measurement
 
-### Chapter 4: Sampling and Sampling Distributions
+Chapter 3: Probability and Probability Distributions
 
-### Chapter 5: Hypothesis Testing and Estimation
+Chapter 4: Sampling and Sampling Distributions
 
-### Chapter 6: One-Sample t-tests and Confidence Intervals
+Chapter 5: Hypothesis Testing and Estimation
 
-### Chapter 7: Independent Samples t-tests and Confidence Intervals
+Chapter 6: One-Sample t-tests and Confidence Intervals
 
-### Chapter 8: One-Way ANOVA
+Chapter 7: Independent Samples t-tests and Confidence Intervals
 
-### Chapter 9: Two-Way ANOVA
+Chapter 8: One-Way ANOVA
 
-### Chapter 10: Correlation and Regression
+Chapter 9: Two-Way ANOVA
 
-### Chapter 11: Logistic Regression and Multiple Regression
+Chapter 10: Correlation and Regression
 
-### Chapter 12: Non-Parametric Tests
+Chapter 11: Logistic Regression and Multiple Regression
 
-### Chapter 13: Factor Analysis and Structural Equation Modeling
+Chapter 12: Non-Parametric Tests
 
-### Chapter 14: Meta-Analysis
+Chapter 13: Factor Analysis and Structural Equation Modeling
 
-### Chapter 15: Advanced Topics in Research Methods and Statistics
+Chapter 14: Meta-Analysis
+
+Chapter 15: Advanced Topics in Research Methods and Statistics
+
+## Laboratory
+
+Lab 1: Brainstorming Research Ideas
+
+Lab 2: Conducting a Literature Search
+
+Lab 3: Structure of Research Articles
+
+Lab 4: Research Outline
+
+Lab 5: Peer Reviews of Outline
+
+Lab 6: Introduction Draft
+
+Lab 7: Peer Review of Introduction
+
+Lab 8: Data Collection Day (and Methods Draft)
+
+Lab 9: Data Collection Day (and Peer Review Methods)
+
+Lab 10: Results Draft
+
+Lab 11: APA Style Graphs and Tables
+
+Lab 12: Discussion Draft
+
+Lab 13: Title Page, Abstract and References
+
+Lab 14: Peer Review of Discussion
+
+Lab 15: Data Blitz\

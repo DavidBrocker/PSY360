@@ -1,1 +1,75 @@
-## Chapter 2: Working with descriptive statistics 
+---
+format: html
+server: shiny
+---
+
+## Chapter 2: Working with Descriptive Statistics
+
+Descriptive statistics *describe* what the data *looks* like. You likely recall seeing the bell curve in PSY248 (statistics). You may even remember the phrase *central tendency*. The idea behind these values is that they give us a metric of where the data (likely) comes from.
+
+Let's go over the usual suspects: Mean, Median, Mode, and Range
+
+#### Mean
+
+The mean represents the average of a set of numbers. Mathematically represented by the following equation:
+
+$\overline{X}=\frac{\Sigma x}{n}$
+
+In a simple group, the mean can be seen by *eyeballing* the data:
+
+```{r}
+library(huxtable)
+library(dplyr)
+library(ggplot2)
+library(shiny)
+
+x <- rnorm(5,1,0)
+x
+```
+
+The *only* number that exists here is 1, so the mean *has* to be 1...right?!
+
+```{r}
+paste0("The mean of x = ", mean(x))
+```
+
+However, when the numbers become more spread out and varied, it is not as easy.
+
+```{r}
+y <- rnorm(15,5,2) |> round(0)
+y
+```
+
+Eyeballing this data will not do us any good!
+
+```{r}
+paste0("The mean of y = ", mean(y) |> round(2))
+```
+
+$\sigma = \frac{\Sigma (x- \overline{x} }{n-1}$
+
+::: callout-tip
+## Never trust the eyeballing of data as a replacement for calculation!
+:::
+
+#### Test
+
+```{r}
+#| context: server
+library(shiny)
+
+ui <- fluidPage(
+  textInput("numba","Enter N",value = ""),
+  plotOutput("plotme")
+)
+
+server <- function(input, output, session) {
+  output$plotme <- renderPlot({
+    x <- rnorm(input$numba
+               ,100,15)
+    plot(x)
+  })
+}
+
+shinyApp(ui, server)
+```

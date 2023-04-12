@@ -1,0 +1,118 @@
+---
+title: "Lab 1: Brainstorming Ideas"
+code-fold: true
+code-link: true
+format: html
+---
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+library(babynames)
+library(dplyr,warn.conflicts = F)
+library(huxtable)
+```
+
+### For My First Trick...
+
+You will be working in a group this semester. You will develop a project, gather measures, find background literature, collect data, analyze results, all culminating in a final paper.
+
+How do *you* think groups should be decided?
+
+1.  What if we clustered groups together by GPA? (consider using means clustering from `{cluster}` package.
+
+```{r}
+meth1 <- 
+  data.frame(
+  student = 1:20,
+  gpa = c(rnorm(5,3.4,.3),
+              rnorm(5,3.0,.3),
+              rnorm(5,2.2,1),
+              rnorm(5,2.5,.5))
+) 
+
+cluster::agnes(meth1, metric = "euclidean", method = "average")
+```
+
+2.  What if we sorted groups alphabetically?
+
+```{r}
+df_test <- 
+  data.frame(
+  student = paste0(
+    sample(babynames$name,30), " ", sample(LETTERS,30,replace = T), "."
+))
+
+df_test |> 
+  arrange(student) |> 
+  hux()
+
+```
+
+```{r}
+
+num_gr <- 5
+
+colname <- paste0("Group ", 1:5)
+
+df <- 
+  df_test |> 
+  group_by((row_number()-1) %/% (n()/num_gr)) |> 
+  tidyr::nest()
+
+df_t <- 
+  df$data |> 
+  as.data.frame() |> 
+  hux() |> 
+  theme_article()
+
+df_t[1,1:5] <- colname
+
+df_t |> 
+  set_left_border() |> 
+  set_caption("Study Groups")
+```
+
+3.  What if each group was assigned a letter of A,B,C,D, or E?
+
+```{r}
+df_test |> 
+  mutate(lettergrp = sample(LETTERS[1:5],length(student),replace = T)) |> 
+  arrange(lettergrp)
+
+  
+```
+
+These are all methods of *assignment* which we will cover later on in lecture!
+
+### Identifying a Research Topic
+
+Take 5 minutes and brainstorm with your group.
+
+It can help to first identify the *field* in which you (and your group) are interested. For example, if you are interested in Sports Psychology, you might think about how exercise or coaching can effect how a player performs on any given game.
+
+### Search for the topic!
+
+You can use the Farmingdale Databases or my personal favorite, Google Scholar. When you find an article you like, click on *Cited By* to see recent studies that have included the current study in their references.
+
+<div>
+
+::: {#fig-articles layout-ncol="2"}
+![Library](images/library.png){#fig-library}
+
+![Google](images/google.png){#fig-google}
+:::
+
+### Connected Papers
+
+[![Connected Papers: Visualize Article Connections](images/Screenshot%202023-04-11%20at%2010.22.06%20PM.png){fig-alt="An image of a network graph depicting article similarity"}](https://www.connectedpapers.com/main/b7a8960d501fa31844d217c49618f1f7ce8fd480/Punctuation-in-text-messages-may-convey-abruptness.-Period/graph)
+
+### Defining Variables
+
+1.  What is your Independent Variable
+2.  What is your Dependent Variable
+3.  What is/are your operational definition(s)
+4.  What is/are your conceptual definition(s)
+
+### Group Experiment Planning Worksheet
