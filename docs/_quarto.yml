@@ -1,0 +1,48 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "PSY360: Research Methods"
+  author: "David Brocker & Kathryn Hauschild, Ph.D"
+  date: "`r format(Sys.time(), '%d %B, %Y')"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: "Lectures"
+      chapters:
+      - chapter1.qmd
+      - chapter2.qmd
+      - words.qmd
+      - summary.qmd
+      - references.qmd
+    - part: "Laboratory"
+      chapters: 
+      - lab1.qmd
+      - lab2.qmd
+      - lab3.qmd
+      - lab4.qmd
+      - lab5.qmd
+      - lab6.qmd
+      - lab7.qmd
+      - lab8.qmd
+      - lab9.qmd
+      - lab10.qmd
+      - lab11.qmd
+      - lab12.qmd
+      - lab13.qmd
+      - lab14.qmd
+      - lab15.qmd
+      
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: 
+      dark: darkly
+      light: flatly
+  pdf:
+    documentclass: scrreprt
+
+editor: visual

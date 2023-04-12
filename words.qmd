@@ -1,0 +1,43 @@
+## Let's Take a Sentence
+
+```{r}
+library(stringr)
+library(dplyr)
+library(janeaustenr)
+library(ggplot2)
+library(wesanderson)
+library(tidyr)
+
+sent <- sample(sentences,1)
+
+sent
+```
+
+### How many characters?
+
+```{r}
+str_length(sent)
+```
+
+### How many words?
+
+```{r}
+length(unlist(str_match_all(sent, "\\b\\w+\\b")))
+```
+
+### How many words start with a vowel?
+
+```{r}
+sent_split <- unlist(str_split(sent, boundary(type = "word")))
+
+str_extract(sent_split, "^[aeiou]\\w+" )
+
+```
+
+### How many words start with a consonant?
+
+```{r}
+sent_split <- unlist(str_split(sent, boundary(type = "word")))
+# We only need to change one character!
+str_extract(sent_split, "[^aeiou]\\w+" )
+```
