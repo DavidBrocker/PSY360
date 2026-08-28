@@ -1,0 +1,9 @@
+---
+title: "APA Style Reference Formatting and Writing a Hypothesis"
+format: html
+page-layout: full
+---
+
+<iframe src="lab3.html" style="width: 100%; height: calc(100vh - 140px); border: none;">
+
+</iframe>

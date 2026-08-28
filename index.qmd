@@ -1,67 +1,30 @@
-# Preface {.unnumbered}
+---
+title: "PSY 360: Research Methods"
+format: html
+---
 
-Welcome to PSY360: Research Methods! The goal of this course is to introduce you to the world of research and discuss *how* research is conducted, *why* research is conducted, and *what* it means to conduct research.
+Welcome to the companion site for **PSY 360: Research Methods**, Fall 2026. Start with the [Course Overview deck](welcome_viewer.qmd), then work through lectures and labs in schedule order.
 
-## Lecture
+This site is being rebuilt from Dave's real PowerPoint archive (`Downloads/D2LExport_2378114_2026SP-FAR-PSY360-25569_202681933`) against the confirmed Fall 2026 syllabus schedule. The table below tracks what's built so far and where its content came from.
 
-Chapter 1: Introduction to Research Methods and Statistics
+## Lectures
 
-Chapter 2: Variables, Measurement, and Scales of Measurement
+| Week | Topic | Status | Source |
+|---|---|---|---|
+| — | Course Overview | Built | `Course Overview 360.pptx` |
+| 1 | Psychology as a Way of Thinking; Sources of Information (Ch. 1–2) | Not converted — animation/video-heavy | `Psychology as a Way of Thinking.pptx` (330 MB), `Sources of Information…pptx` (563 MB) — needs a different treatment than a direct qmd conversion; see the triage notes |
+| 2 | Three Claims (Ch. 3, part 1) | Built | `Lec 3 - Three Claims…pptx` |
+| 2 | Four Validities (Ch. 3, part 2) | Built | `Four Validities…pptx` |
+| 3 | Ethical Guidelines for Research Psychology (Ch. 4) | Built | `Ethical Guidelines for Research Psychology (1).pptx` |
+| 5 | Identifying Good Measurement: Validity (Ch. 5, part 1) | Built | `Identifying Good Measurement_Validity (2).pptx` |
+| 5 | Identifying Good Measurement: Reliability (Ch. 5, part 2) | Built | `Identifying Good Measurement_Reliability.pptx` |
+| 6–15 | Everything else (Ch. 6–14: sampling, experimental design, t-tests/ANOVA, confounds, multiple IVs, nonparametric tests) | Coming soon | See the schedule artifact for the full real sequence |
 
-Chapter 3: Probability and Probability Distributions
+## Labs
 
-Chapter 4: Sampling and Sampling Distributions
-
-Chapter 5: Hypothesis Testing and Estimation
-
-Chapter 6: One-Sample t-tests and Confidence Intervals
-
-Chapter 7: Independent Samples t-tests and Confidence Intervals
-
-Chapter 8: One-Way ANOVA
-
-Chapter 9: Two-Way ANOVA
-
-Chapter 10: Correlation and Regression
-
-Chapter 11: Logistic Regression and Multiple Regression
-
-Chapter 12: Non-Parametric Tests
-
-Chapter 13: Factor Analysis and Structural Equation Modeling
-
-Chapter 14: Meta-Analysis
-
-Chapter 15: Advanced Topics in Research Methods and Statistics
-
-## Laboratory
-
-Lab 1: Brainstorming Research Ideas
-
-Lab 2: Conducting a Literature Search
-
-Lab 3: Structure of Research Articles
-
-Lab 4: Research Outline
-
-Lab 5: Peer Reviews of Outline
-
-Lab 6: Introduction Draft
-
-Lab 7: Peer Review of Introduction
-
-Lab 8: Data Collection Day (and Methods Draft)
-
-Lab 9: Data Collection Day (and Peer Review Methods)
-
-Lab 10: Results Draft
-
-Lab 11: APA Style Graphs and Tables
-
-Lab 12: Discussion Draft
-
-Lab 13: Title Page, Abstract and References
-
-Lab 14: Peer Review of Discussion
-
-Lab 15: Data Blitz\
+| Topic | Status | Source |
+|---|---|---|
+| Lab 1: Brainstorming Research Ideas | Built | `Lab 1 - Brainstorming Research Ideas.pptx` |
+| Lab 1 (earlier draft — group-assignment methods in R) | Kept, unlisted | `lab1_group_methods_DRAFT.qmd` — ask Dave whether to merge back in |
+| Lab 3: APA Style Reference Formatting and Writing a Hypothesis | Built | `APA Style Reference Formatting and Writing a Hypothesis.pptx` — source deck self-identifies as "Lab 3"; Lab 2 not yet located/converted |
+| Everything else | Coming soon | See the schedule artifact for the real lab/paper-draft sequence |

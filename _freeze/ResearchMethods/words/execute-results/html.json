@@ -1,0 +1,15 @@
+{
+  "hash": "305e5f4778a0874ef59f799199983cff",
+  "result": {
+    "engine": "knitr",
+    "markdown": "## Let's Take a Sentence\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(stringr)\nlibrary(dplyr)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n\nAttaching package: 'dplyr'\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n```\n\n\n:::\n\n```{.r .cell-code}\nlibrary(janeaustenr)\nlibrary(ggplot2)\nlibrary(wesanderson)\nlibrary(tidyr)\n\nsent <- sample(sentences,1)\n\nsent\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"The small red neon lamp went out.\"\n```\n\n\n:::\n:::\n\n\n### How many characters?\n\n\n::: {.cell}\n\n```{.r .cell-code}\nstr_length(sent)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 33\n```\n\n\n:::\n:::\n\n\n### How many words?\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlength(unlist(str_match_all(sent, \"\\\\b\\\\w+\\\\b\")))\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 7\n```\n\n\n:::\n:::\n\n\n### How many words start with a vowel?\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsent_split <- unlist(str_split(sent, boundary(type = \"word\")))\n\nstr_extract(sent_split, \"^[aeiou]\\\\w+\" )\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] NA    NA    NA    NA    NA    NA    \"out\"\n```\n\n\n:::\n:::\n\n\n### How many words start with a consonant?\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsent_split <- unlist(str_split(sent, boundary(type = \"word\")))\n# We only need to change one character!\nstr_extract(sent_split, \"[^aeiou]\\\\w+\" )\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"The\"   \"small\" \"red\"   \"neon\"  \"lamp\"  \"went\"  NA     \n```\n\n\n:::\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

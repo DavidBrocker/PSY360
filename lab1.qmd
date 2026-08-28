@@ -1,137 +1,152 @@
 ---
-title: "Lab 1: Brainstorming Ideas"
-code-fold: true
-code-link: true
-format: html
+title: "Lab 1: Brainstorming Research Ideas"
+format: 
+  revealjs:
+    theme: custom.scss
+    incremental: true   
+    touch: true
+    height: 1080
+    width: 1920
+    highlight-style: a11y
 ---
 
-```{r}
-#| warning: false
-#| message: false
-#| echo: false
-library(babynames)
-library(dplyr,warn.conflicts = F)
-library(huxtable)
-```
+## Brainstorming Research Ideas
 
-### Group Assignment
+### PSY 360 — Lab 1
 
-You will be working in a group this semester. You will develop a project, gather measures, find background literature, collect data, analyze results, all culminating in a final paper.
-
-How do *you* think groups should be decided?
-
-1.  What if we clustered groups together by GPA? (consider using means clustering from `{cluster}` package.
-
-```{r}
-meth1 <- 
-  data.frame(
-  student = 1:20,
-  gpa = c(rnorm(5,3.4,.3),
-              rnorm(5,3.0,.3),
-              rnorm(5,2.2,1),
-              rnorm(5,2.5,.5))
-) 
-
-#cluster::agnes(meth1, metric = "euclidean", method = "average")
-```
-
-2.  What if we sorted groups alphabetically?
-
-```{r}
-df_test <- 
-  data.frame(
-  student = paste0(
-    sample(babynames$name,30), " ", sample(LETTERS,30,replace = T), "."
-))
-
-num_gr <- 5
-
-colname <- paste0("Group ", 1:5)
-
-df_abc <- 
-  df_test |> 
-  group_by((row_number()-1) %/% (n()/num_gr)) |> 
-  tidyr::nest()
-
-df_abc_d <- 
-  df_abc$data |> 
-  as.data.frame() |> 
-  hux() |> 
-  theme_article()
-
-df_abc_d[1,1:5] <- colname
-
-df_abc_d |> 
-  set_left_border() |> 
-  set_caption("Study Groups")
-
-```
-
-```{r}
-
-num_gr <- 5
-
-colname <- paste0("Group ", 1:5)
-
-df <- 
-  df_test |> 
-  group_by((row_number()-1) %/% (n()/num_gr)) |> 
-  tidyr::nest()
-
-df_t <- 
-  df$data |> 
-  as.data.frame() |> 
-  hux() |> 
-  theme_article()
-
-df_t[1,1:5] <- colname
-
-df_t |> 
-  set_left_border() |> 
-  set_caption("Study Groups")
-```
-
-3.  What if each group was assigned a letter of A,B,C,D, or E?
-
-```{r}
-df_test |> 
-  mutate(lettergrp = sample(LETTERS[1:5],length(student),replace = T),
-         lettergrp = factor(lettergrp)) |> 
-  hux() |> 
-  theme_article()
-
-  
-```
-
-These are all methods of *assignment* which we will cover later on in lecture!
-
-### Identifying a Research Topic
-
-Take 5 minutes and brainstorm with your group.
-
-It can help to first identify the *field* in which you (and your group) are interested. For example, if you are interested in Sports Psychology, you might think about how exercise or coaching can effect how a player performs on any given game.
-
-### Search for the topic!
-
-You can use the Farmingdale Databases or my personal favorite, Google Scholar. When you find an article you like, click on *Cited By* to see recent studies that have included the current study in their references.
-
-<div>
-
-::: {#fig-articles layout-ncol="2"}
-![Library](images/library.png){#fig-library}
-
-![Google](images/google.png){#fig-google}
+:::{.author}
+Dave Brocker
 :::
 
-### Connected Papers
+## How Do You Identify a Topic?
 
-[![Connected Papers: Visualize Article Connections](images/Screenshot%202023-04-11%20at%2010.22.06%20PM.png){fig-alt="An image of a network graph depicting article similarity"}](https://www.connectedpapers.com/main/b7a8960d501fa31844d217c49618f1f7ce8fd480/Punctuation-in-text-messages-may-convey-abruptness.-Period/graph)
+### Start With Experience
 
-### Defining Variables
+::: {layout-ncol="3"}
+![](images/lab1/experience_source1.jpg)
 
-1.  What is your Independent Variable
-2.  What is your Dependent Variable
-3.  What is/are your operational definition(s)
-4.  What is/are your conceptual definition(s)
+![](images/lab1/experience_source2.jpg)
 
-### Group Experiment Planning Worksheet
+![](images/lab1/experience_source3.jpg)
+:::
+
+::: {.callout-tip}
+## Not acceptable sources for your paper — but great for generating ideas!
+Movies, personal experience, and the news can all point you toward a question worth studying, even though none of them belong in your References section.
+:::
+
+## How Do You Identify a Topic?
+
+### Your Topic Needs To Be...
+
+-   Developed during the course of this semester
+-   Not overlapping with other courses, projects, etc.
+
+## How Do You Identify a Topic?
+
+### ...And Meet Criteria for Responsible Research
+
+## FSC IRB Guidelines
+
+::: {.card}
+No more than minimal risk to subjects
+:::
+
+::: {.card}
+Benign in nature — no sensitive subjects
+:::
+
+::: {.card}
+No deception
+:::
+
+::: {.card}
+Anonymous — no identifiable data collected
+:::
+
+## Identifying a Topic
+
+### Brainstorm and Consider Several Topics
+
+![](images/lab1/identifying_topic.jpg){width="45%"}
+
+::: {.callout-important}
+## We want each group to have a unique idea!
+:::
+
+## Finding a Research Topic
+
+### Know Where to Search
+
+![](images/lab1/literature_search.jpg){width="45%"}
+
+Begin your literature search to narrow your topic and refine your ideas.
+
+## Finding a Research Topic
+
+### A Worked Example
+
+![](images/lab1/morbid_curiosity_example.jpg){width="40%"}
+
+**Morbid Curiosity** → **Behavior** — how do you choose!
+
+## Pause and Discuss
+
+### How Do You Choose?
+
+Starting from a broad interest (like "morbid curiosity"), what's one specific, measurable behavior you could actually study?
+
+## Operationalization
+
+### But What Does It All Mean?
+
+What do you mean, "social media use changes mood"?
+
+<details>
+<summary>How they score on a mood questionnaire?</summary>
+One valid operationalization — a self-report measure.
+</details>
+
+<details>
+<summary>How they behave toward others in social situations?</summary>
+A behavioral measure — observed interaction, not self-report.
+</details>
+
+<details>
+<summary>How easily they become frustrated?</summary>
+A different behavioral proxy — reaction to a frustrating task.
+</details>
+
+<details>
+<summary>How their facial expressions change?</summary>
+A physiological/expressive measure — could be coded from video.
+</details>
+
+<details>
+<summary>How they interpret an ambiguous scene?</summary>
+A cognitive/interpretive measure — often used in mood-congruent judgment studies.
+</details>
+
+## Design Methodology
+
+### Where Does Your Idea Fit?
+
+![](images/lab1/design_methodology.jpg){width="55%"}
+
+**Experiment** → Between or Within. **Non-Experiment** → Correlation or Regression.
+
+## Group Experiment Planning Worksheet
+
+Per the Fall 2026 syllabus, this is due in **Week 2 (Sep 7–11)**.
+
+-   Submit on Brightspace
+-   You can collaborate — but your group needs a unique submission!
+
+## Key Takeaways
+
+### Brainstorming Research Ideas
+
+-   A good topic starts anywhere — movies, personal experience, the news — but has to hold up to IRB scrutiny: minimal risk, benign, no deception, anonymous
+-   Narrow a broad interest into something specific with a literature search
+-   Operationalize: turn a vague claim ("X changes mood") into a measurable behavior
+-   Decide your design methodology early — Experiment vs. Non-Experiment shapes everything that follows

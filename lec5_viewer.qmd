@@ -1,0 +1,9 @@
+---
+title: "Identifying Good Measurement: Validity"
+format: html
+page-layout: full
+---
+
+<iframe src="lec5.html" style="width: 100%; height: calc(100vh - 140px); border: none;">
+
+</iframe>

@@ -1,0 +1,9 @@
+---
+title: "Identifying Good Measurement: Reliability"
+format: html
+page-layout: full
+---
+
+<iframe src="lec6.html" style="width: 100%; height: calc(100vh - 140px); border: none;">
+
+</iframe>

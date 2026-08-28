@@ -1,3 +1,130 @@
 ---
-title: "Lab 3: Structure of Research Articles"
+title: "APA Style Reference Formatting and Writing a Hypothesis"
+format: 
+  revealjs:
+    theme: custom.scss
+    incremental: true   
+    touch: true
+    height: 1080
+    width: 1920
+    highlight-style: a11y
 ---
+
+## APA Style Reference Formatting
+
+### and Writing a Hypothesis
+
+:::{.author}
+Dave Brocker — PSY 360, Lab 3
+:::
+
+::: {.callout-tip}
+## Two skills, one lab
+Formatting references correctly and writing a testable hypothesis are separate skills, but both are about being precise — precise about where an idea came from, and precise about what you're predicting.
+:::
+
+## APA Style, 7th Edition
+
+<!--
+TODO (Dave): source deck slides 2-4 are titled "APA Style 7th Edition" but the
+body content (reference-list formatting rules, in-text citation examples)
+lives in images/animations that didn't extract as text. Add your own
+reference-formatting examples here, or point students to the APA manual /
+Purdue OWL directly.
+-->
+
+Reference-list and in-text citation formatting follows the **APA 7th edition** manual.
+
+::: {.callout-important}
+## Where to look this up
+<!-- TODO (Dave): link your preferred APA quick-reference (Purdue OWL, APA style site, or a course handout) here. -->
+Purdue OWL's APA guide is a reliable, free reference for exact formatting of journal articles, books, and websites.
+:::
+
+## What Are the Characteristics of a Good Hypothesis?
+
+::: {.card}
+**Logical**
+
+The logical conclusion of a logical argument
+:::
+
+::: {.card}
+**Testable**
+
+All of the variables, events, and individuals can be defined and observed
+:::
+
+::: {.card}
+**Refutable**
+
+Can be demonstrated to be false
+:::
+
+::: {.card}
+**Positive**
+
+Must make a positive statement about the existence of something
+:::
+
+## Refutable: "Falsifiable"
+
+A hypothesis is **refutable** (or "falsifiable") when it's possible for the outcome to be different from the prediction — there has to be some result that would prove it wrong.
+
+![](images/lab3_apa_hypothesis/hypothesis_good_bad_1.jpg){width="55%"}
+
+## BAD Hypothesis!
+
+![](images/lab3_apa_hypothesis/hypothesis_telepathy_bad_example.gif){width="45%"}
+
+> "The human mind emits thought waves that influence other people, but that cannot be measured or recorded in any way."
+
+::: {.callout-important}
+## Why this fails
+If it can't be measured or recorded *in any way*, there's no possible result that could disprove it. Not refutable — not a testable hypothesis.
+:::
+
+## Positive: A Real Example
+
+![](images/lab3_apa_hypothesis/hypothesis_falsifiable_concept.jpg){width="45%"}
+
+A hypothesis has to claim that something **does** exist or **does** happen — not just that something *doesn't*.
+
+## Examples of Good Hypotheses
+
+![](images/lab3_apa_hypothesis/hypothesis_example_intelligence_creativity.jpg){width="70%"}
+
+For high school students, there is a relationship between intelligence and creativity.
+
+## Examples of Good Hypotheses
+
+![](images/lab3_apa_hypothesis/hypothesis_example_verbal_skills.jpg){width="70%"}
+
+There is a difference between the verbal skills of 3-year-old girls and those of 3-year-old boys.
+
+## Examples of Good Hypotheses
+
+![](images/lab3_apa_hypothesis/hypothesis_example_therapy_depression.jpg){width="70%"}
+
+The new therapy technique will produce significant improvement for severely depressed patients.
+
+::: {.callout-tip}
+## What makes these work
+Each one names specific variables, is stated as a positive claim, and could turn out to be false — the three things a testable hypothesis needs.
+:::
+
+## Final Topic and Annotated Bibliography
+
+<!--
+TODO (Dave): source deck lists "Due Wednesday 2/17 @ 11:59pm" -- that's from
+a prior spring-semester offering and doesn't match the Fall 2026 calendar.
+Replace with the real due date once set for this section.
+-->
+
+All assignments should be submitted electronically on Brightspace.
+
+::: {.card}
+**Individual work, shared sources**
+
+Each member needs to submit their own assignment, in their own words. Group members may annotate the same reference — but consider finding and summarizing independent sources and sharing with one another.
+:::

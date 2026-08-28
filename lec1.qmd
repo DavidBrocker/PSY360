@@ -1,0 +1,155 @@
+---
+title: "Reading and Writing an APA-Style Paper"
+format: 
+  revealjs:
+    theme: custom.scss
+    incremental: true   
+    touch: true
+    height: 1080
+    width: 1920
+    highlight-style: a11y
+---
+
+## Reading and Writing an APA-Style Paper
+
+### Chapter 1
+
+:::{.author}
+Dave Brocker
+Lecturer
+Farmingdale State College
+:::
+
+## Why This Matters
+
+### A Skill You'll Use All Semester
+
+Reading an APA-style paper can seem daunting — some articles run a dozen pages, and the Results section can send the statistically faint of heart running for the hills!
+
+The fix isn't reading faster. It's reading the paper **in the order it was built to be read**, section by section.
+
+## The Six Sections of an APA Paper
+
+::: {.card}
+**Abstract**
+
+One paragraph, the whole study
+:::
+
+::: {.card}
+**Introduction / Background**
+
+Why this study? What's already known?
+:::
+
+::: {.card}
+**Method**
+
+Who, what, and how
+:::
+
+::: {.card}
+**Results**
+
+What did the data show?
+:::
+
+::: {.card}
+**Discussion**
+
+What does it mean?
+:::
+
+::: {.card}
+**References**
+
+Where the claims come from
+:::
+
+## Abstract
+
+### One Paragraph, the Whole Study
+
+The abstract is a 150–250 word summary that previews every other section: the question, the method, the key result, and why it matters.
+
+::: {.callout-tip}
+## Read the abstract first, always
+It tells you whether the rest of the paper is worth your time — and what to expect from each section that follows.
+:::
+
+## Introduction / Background
+
+### Why This Study? What's Already Known?
+
+The introduction builds the case for the study, moving from broad context to the specific question:
+
+-   What do we already know, based on prior research?
+-   What's the gap, disagreement, or open question?
+-   What does *this* study specifically test, and what's the hypothesis?
+
+## Method
+
+### Who, What, and How
+
+The Method section is the recipe — detailed enough that another researcher could run the same study again.
+
+-   **Participants:** who was studied, and how were they recruited?
+-   **Materials/Measures:** what instruments, surveys, or apparatus were used?
+-   **Procedure:** what did participants actually do, in order?
+
+## Results
+
+### What Did the Data Show?
+
+Results reports what was found, without yet interpreting what it means.
+
+-   Descriptive statistics (means, standard deviations)
+-   The statistical test(s) used, and whether the result was significant
+-   Tables and figures that summarize the pattern in the data
+
+::: {.callout-important}
+## Results describes; it doesn't explain
+Save the "why" and "so what" for the Discussion section — mixing the two is a common early-writer mistake.
+:::
+
+## Discussion
+
+### What Does It Mean?
+
+The discussion interprets the results in light of the original question:
+
+-   Did the data support the hypothesis?
+-   How does this fit with (or challenge) prior research from the Introduction?
+-   What are the limitations, and what should future research look at?
+
+## References
+
+### Where the Claims Come From
+
+Every claim in the Introduction and Discussion should trace back to a source listed here, in APA citation format. This is also your best tool for finding *more* papers.
+
+## Pause and Discuss
+
+### Finding Related Work
+
+Pick one article from your literature search. If you clicked "Cited By" on it, what showed up — newer studies that built on it, or studies that argued against it?
+
+## Check Your Understanding
+
+<details>
+<summary>You only have time to skim one paper before lab. Which section do you read first, and why?</summary>
+The Abstract — it's built to answer exactly that question in under a minute, and tells you whether the full paper is worth a closer read.
+</details>
+
+<details>
+<summary>A paper's Results section reports a result, but never says what it means for the field. Is that a problem?</summary>
+No — that's expected. Interpretation belongs in the Discussion section, not Results.
+</details>
+
+## Key Takeaways
+
+### Reading and Writing an APA-Style Paper
+
+-   APA papers follow a fixed structure for a reason: it lets you read strategically instead of front-to-back
+-   Abstract → Introduction → Method → Results → Discussion → References, each with its own job
+-   You'll draft each of these sections yourself this semester, one lab at a time

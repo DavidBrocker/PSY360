@@ -1,0 +1,15 @@
+{
+  "hash": "e38e566eb68f4f2b423e0c42449b1b0c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nformat: html\n---\n\n## Chapter 2: Working with Descriptive Statistics\n\nDescriptive statistics *describe* what the data *looks* like. You likely recall seeing the bell curve in PSY248 (statistics). You may even remember the phrase *central tendency*. The idea behind these values is that they give us a metric of where the data (likely) comes from.\n\nLet's go over the usual suspects: Mean, Median, Mode, and Range\n\n#### Mean\n\nThe mean represents the average of a set of numbers. Mathematically represented by the following equation:\n\n$\\overline{X}=\\frac{\\Sigma x}{n}$\n\nIn a simple group, the mean can be seen by *eyeballing* the data:\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx <- rnorm(5,1,0)\nx\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 1 1 1 1 1\n```\n\n\n:::\n:::\n\n\nThe *only* number that exists here is 1, so the mean *has* to be 1...right?!\n\n\n::: {.cell}\n\n```{.r .cell-code}\npaste0(\"The mean of x = \", mean(x))\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"The mean of x = 1\"\n```\n\n\n:::\n:::\n\n\nHowever, when the numbers become more spread out and varied, it is not as easy.\n\n\n::: {.cell}\n\n```{.r .cell-code}\ny <- rnorm(15,5,2) |> round(0)\ny\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n [1]  7  5  4  6 -2  4  6  2 11  5  6  0  2  1  3\n```\n\n\n:::\n:::\n\n\nEyeballing this data will not do us any good!\n\n\n::: {.cell}\n\n```{.r .cell-code}\npaste0(\"The mean of y = \", mean(y) |> round(2))\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"The mean of y = 4\"\n```\n\n\n:::\n:::\n\n\n$\\sigma = \\frac{\\Sigma (x- \\overline{x} }{n-1}$\n\n::: callout-tip\n## Never trust the eyeballing of data as a replacement for calculation!\n:::\n\n#### Test\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

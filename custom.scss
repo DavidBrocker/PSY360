@@ -1,0 +1,256 @@
+/*-- scss:defaults --*/
+
+//fonts
+@import 'https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Fira+Code&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons&display=swap';
+$font-family-sans-serif: "Fira Sans", "Atkinson Hyperlegible", sans-serif;
+$font-family-monospace: "Fira Code", monospace;
+
+// colors -- PSY 360 palette (distinct from PSY 348's sage; same recipe)
+$body-color: #2B2E3A !default;
+$text-muted: lighten($body-color, 50%);
+$body-bg: #EEF1F7 !default; // cool slate-blue pastel background
+$accent: #46567B;
+$accent2: #7E8FB3;
+$accent3: #AAB6CF;
+$accent4: #DCE2EE;
+$link-color: $accent !default;
+$presentation-title-slide-text-align: left;
+
+/*-- scss:rules --*/
+#title-slide {
+  text-align: center;
+  padding: 40px;
+}
+
+#title-slide .title {
+  color: $accent;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+#title-slide .subtitle {
+  color: $accent;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#title-slide .quarto-title-authors {
+  color: $accent;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+  margin-left: 40%;
+}
+
+.reveal .slide p {
+  color: $body-color;
+  font-size: 1.05em;
+  line-height: 1.5;
+}
+
+.reveal a{
+  color: $body-color;
+}
+
+.reveal .slide h1 {
+  color: $accent;
+}
+
+.reveal .slide h2 {
+  color: $accent;
+  font-size: 80px;
+}
+
+.reveal .slide h3 {
+  color: $body-color;
+}
+
+.highlight-last  {
+  color: grey;
+  .current-fragment {
+    color: #2CA02C;
+  }
+}
+
+.reveal blockquote {
+  background: rgba(255, 255, 255, 0.6);
+  color: $body-color;
+  border-left: 4px solid $accent2;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.reveal ol, .reveal dl, .reveal ul {
+    display: inline-block;
+    color: $body-color;
+    text-align: left;
+}
+
+.callout-tip{
+  padding:10px;
+}
+
+// Same fix as PSY 348: default Bootstrap/Quarto callout-important is
+// red/orange and reads as an error rather than "pay attention, definition
+// here." Restyle in the course's own palette.
+.callout-important {
+  border-left-color: $accent !important;
+  .callout-icon::before {
+    background-color: $accent !important;
+  }
+  .callout-title-container {
+    color: $accent;
+  }
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+  .card-header {
+    color: #555;
+  }
+
+  .card-body{
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .card-footer{
+    font-style: italic;
+    padding: 10px;
+    font-size: .80em;
+  }
+
+  p {
+  font-size: 28px;
+  line-height: 1.4;
+}
+  .card-img {
+    border-radius: 8px;
+  }
+}
+
+.flowpic{
+  border-radius: 20px;
+}
+
+.ques {
+   text-align: center;
+   font-size: 3.0em;
+}
+
+.ques img {
+  width: 25%;
+  color: white;
+  stroke: white;
+}
+
+.reveal .sub {
+  color: #f0f0f0;
+  font-size: 1.8em;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  background-color: #444;
+  width: 50%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.reveal .author {
+  background: #444;
+  color: #ffffff;
+  width: 50%;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 30px;
+}
+
+.emoji {
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.emoji-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.side-by {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.side-by-con {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+#stack-present{
+  color: $accent;
+}
+
+.material-icons{
+  font-size: 4em;
+}
+
+.reveal pre code {
+    background-color: #0f1620;
+    font-size: inherit;
+    color: #fff;
+    font-family: inherit;
+}
+
+details {
+  border: 1px solid $accent2;
+  border-radius: 10px;
+  padding: 10px 10px;
+  color: $body-color;
+}
+
+details > summary {
+  color: $body-color;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.5em;
+}
+
+.ans-txt {
+  display: none;
+}
+
+.ans-txt:hover {
+  display: inline-block;
+}

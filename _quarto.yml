@@ -1,48 +1,38 @@
 project:
-  type: book
+  type: website
   output-dir: docs
 
-book:
-  title: "PSY360: Research Methods"
-  author: "David Brocker"
-  date: "`r format(Sys.time(),'%d %B, %Y)'"
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - part: "Lectures"
-      chapters:
-      - chapter1.qmd
-      - chapter2.qmd
-      - words.qmd
-      - summary.qmd
-      - references.qmd
-    - part: "Laboratory"
-      chapters: 
-      - lab1.qmd
-      - lab2.qmd
-      - lab3.qmd
-      - lab4.qmd
-      - lab5.qmd
-      - lab6.qmd
-      - lab7.qmd
-      - lab8.qmd
-      - lab9.qmd
-      - lab10.qmd
-      - lab11.qmd
-      - lab12.qmd
-      - lab13.qmd
-      - lab14.qmd
-      - lab15.qmd
-      
-
-bibliography: references.bib
+website:
+  sidebar:
+    style: "docked"
+    section: "PSY 360"
+    contents:
+      - section: "Lectures"
+        contents:
+        - href: "welcome_viewer.qmd"
+        - href: "lec2_viewer.qmd"
+        - href: "lec3_viewer.qmd"
+        - href: "lec4_viewer.qmd"
+        - href: "lec5_viewer.qmd"
+        - href: "lec6_viewer.qmd"
+      - section: "Labs"
+        contents:
+        - href: "lab1_viewer.qmd"
+        - href: "lab3_viewer.qmd"
+  title: "PSY 360: Research Methods"
+  navbar:
+    background: "#46567B"
+    left:
+      - href: index.qmd
 
 format:
   html:
-    theme: 
-      dark: darkly
-      light: flatly
-  pdf:
-    documentclass: scrreprt
+    theme: [default, custom.scss]
+    respect-user-color-scheme: true
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
 
 editor: visual
