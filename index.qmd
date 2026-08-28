@@ -10,7 +10,7 @@ This site is being rebuilt from Dave's real PowerPoint archive (`Downloads/D2LEx
 ## Lectures
 
 | Week | Topic | Status | Source |
-|---|---|---|---|
+|------------------|------------------|------------------|------------------|
 | — | Course Overview | Built | `Course Overview 360.pptx` |
 | 1 | Psychology as a Way of Thinking; Sources of Information (Ch. 1–2) | Not converted — animation/video-heavy | `Psychology as a Way of Thinking.pptx` (330 MB), `Sources of Information…pptx` (563 MB) — needs a different treatment than a direct qmd conversion; see the triage notes |
 | 2 | Three Claims (Ch. 3, part 1) | Built | `Lec 3 - Three Claims…pptx` |
@@ -23,7 +23,7 @@ This site is being rebuilt from Dave's real PowerPoint archive (`Downloads/D2LEx
 ## Labs
 
 | Topic | Status | Source |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | Lab 1: Brainstorming Research Ideas | Built | `Lab 1 - Brainstorming Research Ideas.pptx` |
 | Lab 1 (earlier draft — group-assignment methods in R) | Kept, unlisted | `lab1_group_methods_DRAFT.qmd` — ask Dave whether to merge back in |
 | Lab 3: APA Style Reference Formatting and Writing a Hypothesis | Built | `APA Style Reference Formatting and Writing a Hypothesis.pptx` — source deck self-identifies as "Lab 3"; Lab 2 not yet located/converted |

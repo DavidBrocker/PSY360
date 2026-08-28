@@ -3,6 +3,7 @@ title: "Lab 1: Brainstorming Research Ideas"
 format: 
   revealjs:
     theme: custom.scss
+    footer: "[← Course site](index.html)"
     incremental: true   
     touch: true
     height: 1080

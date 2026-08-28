@@ -3,6 +3,7 @@ title: "Identifying Good Measurement: Validity"
 format: 
   revealjs:
     theme: custom.scss
+    footer: "[← Course site](index.html)"
     incremental: true   
     touch: true
     height: 1080

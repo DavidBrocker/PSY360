@@ -254,3 +254,26 @@ details[open] summary {
 .ans-txt:hover {
   display: inline-block;
 }
+
+// Persistent small link back to the course site, set via each deck's
+// YAML footer: key -- shows on every slide (title slide excluded by
+// reveal.js by default), styled to read as an intentional nav element
+// rather than reveal.js's plain default footer text.
+.reveal .footer {
+  bottom: 12px;
+  right: 16px;
+  left: auto;
+  font-size: 0.45em;
+
+  a {
+    color: $text-muted;
+    text-decoration: none;
+    opacity: 0.75;
+
+    &:hover {
+      opacity: 1;
+      color: $accent;
+      text-decoration: underline;
+    }
+  }
+}

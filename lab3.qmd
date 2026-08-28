@@ -3,6 +3,7 @@ title: "APA Style Reference Formatting and Writing a Hypothesis"
 format: 
   revealjs:
     theme: custom.scss
+    footer: "[← Course site](index.html)"
     incremental: true   
     touch: true
     height: 1080
