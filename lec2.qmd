@@ -11,17 +11,34 @@ format:
     highlight-style: a11y
 ---
 
-## Three Claims
+##  {#custom-title data-menu-title="Three Claims"}
 
-### Interrogation Tools for Consumers of Research
-
-:::{.author}
-Dave Brocker
+::: title-bg-icons
+[fact_check]{.material-icons .title-bg-icon-1} [gavel]{.material-icons .title-bg-icon-2} [trending_up]{.material-icons .title-bg-icon-3} [compare_arrows]{.material-icons .title-bg-icon-4} [quiz]{.material-icons .title-bg-icon-5} [insights]{.material-icons .title-bg-icon-6}
 :::
 
-## Pause and Discuss
+:::::::: ghost-nodes
+::: ghost-node
+:::
 
-### How do you know if a study really supports what people say about it?
+::: ghost-node
+:::
+
+::: ghost-node
+:::
+
+::: ghost-node
+:::
+
+::: ghost-node
+:::
+::::::::
+
+[Three Claims]{.cust-title}
+
+[An Interrogation Tool for Consumers of Research]{.cust-sub}
+
+[Dave Brocker]{.cust-author}
 
 ## Variables vs. Constants
 
@@ -39,7 +56,22 @@ Dave Brocker
 
 ## Measured and Manipulated Variables
 
-A **measured** variable is recorded as it naturally occurs. A **manipulated** variable is one the researcher controls — assigning participants to specific levels.
+::: hero-def
+[Variable Types]{.term-pill}
+: How a variable comes to have its value: **recorded** as it naturally occurs, or **assigned** by the researcher.
+
+::: hero-example
+::: panel-tabset
+### Measured
+
+Recorded as it naturally occurs -- the researcher observes and records a value that already exists (e.g., a participant's age, their score on a mood survey).
+
+### Manipulated
+
+Controlled by the researcher -- participants are assigned to specific levels of the variable (e.g., randomly assigned to a caffeine or no-caffeine condition).
+:::
+:::
+:::
 
 ## Pause and Discuss
 
@@ -126,9 +158,14 @@ Covariance, temporal precedence, and internal validity (ruling out other explana
 
 ### The "Kubrick Stare"
 
-![](images/ch3_three_claims/kubrick_stare_1.png){width="50%"}
+![](images/ch3_three_claims/kubrick_stare_1.png){.rounded-fig width="50%"}
 
 *A Clockwork Orange*, *The Shining*, *Wednesday* — internet claims that this camera angle (chin down, eyes up) reliably signals "this character is unhinged." Is that a real pattern, or pattern-matching after the fact?
+
+::: {.callout-tip}
+## It's an actual finding, not just internet lore
+Levesque et al. (2025, *Journal of Nonverbal Behavior*) had 137 participants rate downward-tilted ("Kubrick stare") vs. upright faces on creepiness. Kubrick-stare faces were rated significantly creepier across the board -- and the effect was even stronger for male faces ($\eta_p^2$ = .45) than female faces ($\eta_p^2$ = .33).
+:::
 
 ## Not All Claims Are Based on Research
 

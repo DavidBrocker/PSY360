@@ -1,5 +1,5 @@
 ---
-title: "Reading and Writing an APA-Style Paper"
+title: "Psychology as a Way of Thinking"
 format: html
 page-layout: full
 ---

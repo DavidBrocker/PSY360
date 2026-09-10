@@ -10,6 +10,7 @@ website:
       - section: "Lectures"
         contents:
         - href: "welcome_viewer.qmd"
+        - href: "lec1_viewer.qmd"
         - href: "lec2_viewer.qmd"
         - href: "lec3_viewer.qmd"
         - href: "lec4_viewer.qmd"

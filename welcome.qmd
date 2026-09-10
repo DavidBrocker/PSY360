@@ -1,4 +1,7 @@
 ---
+title: "Research Methods"
+subtitle: "PSY 360 — CRN 92731 — Fall 2026"
+author: "Dave Brocker"
 format: 
   revealjs:
     theme: custom.scss
@@ -10,17 +13,11 @@ format:
     highlight-style: a11y
 ---
 
-::: title-center
-Research Methods
-:::
-
-::: author
-Dave Brocker PSY 360 — CRN 92731 Fall 2026
-:::
-
 ## Course Basics
 
-### Lecture Tue/Thu 1:40–2:55 PM · Lab Wed 10:50–11:40 AM
+### Lecture Tue/Thu 1:40–2:55 PM
+
+### Lab Wed 10:50–11:40 AM
 
 Whitman Hall 253. Prerequisite: PSY 348 or permission from the Department Chairperson.
 
@@ -34,13 +31,15 @@ My research focuses on how we view and interact with other individuals — speci
 
 ## Email Me!
 
-### brockeda\@farmingdale.edu
+### Emai: brockeda\@farmingdale.edu
 
-Please make sure your email has a subject line, a greeting, and your name.
+Please make sure your email has a **subject line**, a **greeting**, and **your name**.
 
 ::: callout-tip
 ## I will reply within 24–48 hours
 :::
+
+![](images/course_overview/email_rightwrong.png)
 
 ## Office Hours
 
