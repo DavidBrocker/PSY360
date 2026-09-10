@@ -45,7 +45,7 @@ format:
 ![](images/ch3_three_claims/variables_constants_1.png){width="55%"}
 
 | Aspect | Variable | Constant |
-|---|---|---|
+|----|----|----|
 | Example | Age of participants (18, 25, 40…) | All participants are 25 years old |
 | Example | Type of therapy (CBT, DBT, psychoanalysis) | All participants receive CBT only |
 | Example | Reaction time on a cognitive task | All participants finish in exactly 30 seconds |
@@ -56,11 +56,13 @@ format:
 
 ## Measured and Manipulated Variables
 
-::: hero-def
-[Variable Types]{.term-pill}
-: How a variable comes to have its value: **recorded** as it naturally occurs, or **assigned** by the researcher.
+::::: hero-def
 
-::: hero-example
+[Variable Types]{.term-pill}
+
+:   How a variable comes to have its value: **recorded** as it naturally occurs, or **assigned** by the researcher.
+
+:::: hero-example
 ::: panel-tabset
 ### Measured
 
@@ -70,8 +72,8 @@ Recorded as it naturally occurs -- the researcher observes and records a value t
 
 Controlled by the researcher -- participants are assigned to specific levels of the variable (e.g., randomly assigned to a caffeine or no-caffeine condition).
 :::
-:::
-:::
+::::
+:::::
 
 ## Pause and Discuss
 
@@ -82,14 +84,14 @@ Controlled by the researcher -- participants are assigned to specific levels of 
 ### Five Real Examples
 
 | Variable | Operational Definition | Levels | Measured or Manipulated? |
-|---|---|---|---|
+|----|----|----|----|
 | Car ownership | Circled "I own a car" / "I do not own a car" | 2 levels | Measured |
 | Expressing gratitude to a partner | Agreement with items like "I tell my partner often that s/he is the best" | 7 levels (1–7) | Measured |
 | Exposure to disinformation | Heard false information once or twice | 2 levels | Manipulated |
 | Disgust Sensitivity | Score 0–4, higher = more disgusted | Continuous | Measured |
-| Level of anxiety | Heart-rate monitor; >2 SD above baseline BPM = high anxiety | Continuous | Measured |
+| Level of anxiety | Heart-rate monitor; \>2 SD above baseline BPM = high anxiety | Continuous | Measured |
 
-::: {.callout-tip}
+::: callout-tip
 ## An operational definition turns a vague concept into something you can actually measure or manipulate.
 :::
 
@@ -123,8 +125,9 @@ Less exercise → lower income. More exercise → higher income. (Both go the sa
 
 Less coffee → lower depression. More coffee → higher depression. (They move in opposite directions.)
 
-::: {.callout-important}
+::: callout-important
 ## An association is not a cause
+
 Knowing two variables move together tells you nothing yet about whether one causes the other — that's the whole reason Causal Claims get their own, stricter set of rules.
 :::
 
@@ -132,6 +135,7 @@ Knowing two variables move together tells you nothing yet about whether one caus
 
 **Time of dinner** ↔ a second variable that doesn't reliably move with it — no consistent pattern either direction.
 
+```{=html}
 <!--
 NOTE (confirmed by Dave, 8/28/26): source slide 52 pairs "Time of dinner" with
 a "Degree of depression" label but shows Early/Later mapped to Less obese/More
@@ -140,6 +144,7 @@ the original deck. Dave confirms this recurs most semesters and slips by his
 own review each time. Left as a general zero-association example above
 rather than guessing which variable he meant to pair.
 -->
+```
 
 ## Making Predictions Based on Associations
 
@@ -149,8 +154,9 @@ Once you know two variables are associated, you can predict one from the other �
 
 A causal claim says one variable **produces a change** in another — the strongest, and hardest to earn, of the three claim types.
 
-::: {.callout-important}
+::: callout-important
 ## Causal claims need three things
+
 Covariance, temporal precedence, and internal validity (ruling out other explanations) — each gets its own deep dive in the Four Validities lecture.
 :::
 
@@ -162,8 +168,9 @@ Covariance, temporal precedence, and internal validity (ruling out other explana
 
 *A Clockwork Orange*, *The Shining*, *Wednesday* — internet claims that this camera angle (chin down, eyes up) reliably signals "this character is unhinged." Is that a real pattern, or pattern-matching after the fact?
 
-::: {.callout-tip}
+::: callout-tip
 ## It's an actual finding, not just internet lore
+
 Levesque et al. (2025, *Journal of Nonverbal Behavior*) had 137 participants rate downward-tilted ("Kubrick stare") vs. upright faces on creepiness. Kubrick-stare faces were rated significantly creepier across the board -- and the effect was even stronger for male faces ($\eta_p^2$ = .45) than female faces ($\eta_p^2$ = .33).
 :::
 
@@ -173,8 +180,9 @@ Levesque et al. (2025, *Journal of Nonverbal Behavior*) had 137 participants rat
 
 > "You just need folic acid, B complex — this stuff makes your pee bright yellow — and magnesium. Combine those three with a bit of water and — chef's kiss — no hangover! Coming from the queen of hangovers, try it."
 
-::: {.callout-tip}
+::: callout-tip
 ## The whole point of this course
+
 Learning to tell the difference between a claim like this one and a claim backed by actual research.
 :::
 
@@ -182,7 +190,7 @@ Learning to tell the difference between a claim like this one and a claim backed
 
 ### Three Claims
 
--   Variables vary; constants don't — and operational definitions turn vague concepts into something measurable
--   Every research claim is a Frequency, Association, or Causal claim
--   Associations can be positive, negative, or zero — but none of them, by themselves, prove causation
--   Causal claims carry the highest bar: covariance, temporal precedence, and internal validity, all three
+- Variables vary; constants don't — and operational definitions turn vague concepts into something measurable
+- Every research claim is a Frequency, Association, or Causal claim
+- Associations can be positive, negative, or zero — but none of them, by themselves, prove causation
+- Causal claims carry the highest bar: covariance, temporal precedence, and internal validity, all three
