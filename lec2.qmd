@@ -1,5 +1,4 @@
 ---
-title: "Three Claims: Interrogation Tools for Consumers of Research"
 format: 
   revealjs:
     theme: custom.scss
